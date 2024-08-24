@@ -14,9 +14,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        // if (config('app.env') !== 'local') {
-        //     URL::forceScheme('https');
-        // }
+        if (config('app.env') !== 'local') {
+            URL::forceScheme('https');
+        }
     }
 
     /**
@@ -26,8 +26,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if ($this->app->environment('production')) {
-            URL::forceScheme('https');
-        }
+        // if ($this->app->environment('production')) {
+        //     URL::forceScheme('https');
+        // }
     }
 }
