@@ -13,7 +13,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        if (config('app.env') !== 'local') {
+            URL::forceScheme('https');
+        }
     }
 
     /**
@@ -23,8 +25,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if (config('app.env') !== 'local') {
-            URL::forceScheme('https');
-        }
+        //
     }
 }
