@@ -8,7 +8,7 @@
     "routes": [
       {
         "src": "/build/assets/(.*)",
-        "dest": "/public/build/assets/$1"
+        "dest": "/public/$1"
       },
       {
         "src": "/favicon/(.*)",
@@ -20,12 +20,12 @@
       }
     ],
     "env": {
-      "APP_NAME": "従業員の出席",
+      "APP_NAME": "Laravel_app",
       "APP_ENV": "production",
-      "APP_KEY": "base64:AXm5GlVbYte0ljTLVD7+AQlZJEUlNJXhLJK3GmjyMAs=",
+      "APP_KEY": "base64:gcYf1ecxoA8LLu7tA+0jr09bOMeId712qJzwynpraGQ=",
       "APP_DEBUG": "false",
-      "APP_URL": "https://employee-attendance-drab.vercel.app",
-      "ASSET_URL": "https://employee-attendance-drab.vercel.app",
+      "APP_URL": "https://test-blog-flax.vercel.app/",
+      "ASSET_URL": "https://test-blog-flax.vercel.app/",
       "VERCEL_DEMO_MODE": "true",
       "APP_CONFIG_CACHE": "/tmp/config.php",
       "APP_EVENTS_CACHE": "/tmp/events.php",
